@@ -1,0 +1,258 @@
+/* Barra de navegação vertical */
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    background:  #f7b600 url(../img/menu.png) no-repeat left bottom;
+    text-decoration: none;
+    color: #000;
+    text-indent: 40px;
+    line-height: 40px;
+}
+
+a:hover{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+/* Fim de navegação vertical */
+
+/* Marcando página atual */
+/*
+#home .home a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+*/
+
+/* Barra de navegação horizontal */ 
+/*
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url(../img/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li{
+    float: left;
+}
+
+ul a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    background: url(../img/divisor.png) repeat-y;
+}
+
+ul .primeiro a{
+    background: none;
+}
+
+ul a:hover{
+    color: #085662;
+    background: #44cade;
+}
+*/
+
+/* Barra de navagação com abas */
+/*
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li{
+    float: left;
+    background: url(../img/aba-direita.png) no-repeat top right;
+}
+
+li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(../img/aba-esquerda.png) no-repeat top left;
+    color: #fff;
+}
+
+ul a:hover{
+    color: #894a1f;
+}
+
+ul #atual{
+    background: url(../img/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a{
+    background: url(../img/aba-esquerda-atual.png) no-repeat top left;
+}*/
+
+/* Estilizando Tabelas */
+
+/* body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom:  1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em; /* espaçamento entre letras */
+/*}
+tr.alterna {
+    background-color: #efefef;
+}
+tr:hover{
+    background-color: #c3c3e5;
+}
+
+.numero {
+    text-align: right;
+}*/
+
+/* Estilizando Formulários 1*/
+/*
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display:block;
+    cursor: pointer;
+}
+
+input{
+    width: 20em;
+}
+
+input.radio, input.checkbox {
+    width: auto;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}
+
+.radio {
+    margin-right: 1em;
+}*/
+
+/* Estilizando Formulários 2*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #395989;
+}
+
+#container{
+    width: 761px;
+    height: 500px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#container img{
+    width: 327px;
+    height: 99px;
+    margin-top: 10px;
+}
+
+input {
+    height: 40px;
+    width: 70%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border-radius: 5px;
+}
+
+input.matricula{
+    background-image: url(../img/icone-usuario.png);
+}
+
+input.senha{
+    background-image: url(../img/icone-cadeado.png);
+}
+
+input.submit{
+    color: #fff;
+    background-color: #395989;
+    padding: 5px 20px;
+    height: 45px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#checkbox > input{
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 18px;
+    margin: 0;
+}
