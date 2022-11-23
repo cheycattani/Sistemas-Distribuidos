@@ -27,7 +27,7 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
-  // if (n == 1 && !validateForm()) return false;
+  if (n == 1 && !validateForm()) return false;
   // Hide the current tab:
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
@@ -35,7 +35,7 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    document.getElementById("regForm").submit();
+    document.getElementById("cadastroForm").submit();
     return false;
   }
   // Otherwise, display the correct tab:
@@ -89,4 +89,3 @@ function mascara(i) {
   if (v.length == 11) i.value += "-";
 
 }
-
