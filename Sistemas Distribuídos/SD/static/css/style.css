@@ -31,25 +31,6 @@ a:hover {
   margin-top: 10px;
 }
 
-input {
-  height: 40px;
-  width: 70%;
-  font-size: 18px;
-  margin-bottom: 10px;
-  background-color: #fff;
-  padding-left: 40px;
-  background-repeat: no-repeat;
-  background-position: 10px;
-  border-radius: 5px;
-}
-
-input.matricula {
-  background-image: url(../img/icone-usuario.png);
-}
-
-input.senha {
-  background-image: url(../img/icone-cadeado.png);
-}
 
 input.submit {
   color: #fff;
@@ -66,6 +47,7 @@ input.submit {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 #checkbox {
   display: flex;
@@ -395,4 +377,13 @@ input.invalid {
 
 .step.finish {
   background-color: #04AA6D;
+}
+
+.inputWrapper {
+  display: flex;
+
+}
+
+.inputWrapper label {
+  margin-right: 10px;
 }

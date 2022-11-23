@@ -48,6 +48,20 @@
 
       <div class="tab">
         <legend><span class="number">1</span>Dados do aluno estágiário</legend>
+
+        <div>
+          <label for="corporate_type">Tipo de empresa:</label>
+
+          <div class="inputWrapper">
+            <label for="private">Privada</label><br>
+            <input type="radio" id="private" name="corporate_type" value="Private">
+          </div>
+          <div class="inputWrapper">
+            <label for="public">Pública</label><br>
+            <input type="radio" id="public" name="corporate_type" value="Public">
+          </div>
+        </div>
+
         <label for="name">Nome:</label>
         <input type="text" id="name" name="user_name">
 
@@ -76,9 +90,100 @@
         <input type="text" id="address" name="user_address">
       </div>
 
-      <div class="tab">Contact Info:
-        <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
-        <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+
+      <div class="tab">
+        <legend><span class="number">1</span>Dados da empresa</legend>
+        <label for="corporate_name">Razão Social:</label>
+        <input type="text" id="corporate_name" name="corporate_name">
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="user_address">
+
+        <label for="ativities">Ramo de Atividades:</label>
+        <input type="text" id="rg" name="user_rg">
+
+        <div>
+          <div class="inputWrapper">
+            <label for="ativities">Ramo de Atividades:</label>
+
+            <label for="private">Privada</label><br>
+            <input type="radio" id="private_corporate" name="private_corporate" value="Private">
+          </div>
+          <div class="inputWrapper">
+            <label for="public">Pública</label><br>
+            <input type="radio" id="public_corporate" name="public_corporate" value="Public">
+          </div>
+        </div>
+
+        <label for="tuition">Matrícula:</label>
+        <input type="text" id="tuition" name="user_tuition">
+
+        <label for="course">Curso:</label>
+        <input type="text" id="course" name="user_course">
+
+        <label for="period">Semestre/Ano:</label>
+        <input type="text" id="period" name="user_period">
+
+
+      </div>
+      <div class="tab">
+        <legend><span class="number">1</span>Dados do aluno estágiário</legend>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label for="cpf">CPF:</label>
+        <input oninput="mascara(this)" type="text" id="cpf" name="user_cpf">
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="user_rg">
+
+        <label for="instituition">Instituição:</label>
+        <input type="text" id="instituition" name="user_instituition">
+
+        <label for="tuition">Matrícula:</label>
+        <input type="text" id="tuition" name="user_tuition">
+
+        <label for="course">Curso:</label>
+        <input type="text" id="course" name="user_course">
+
+        <label for="period">Semestre/Ano:</label>
+        <input type="text" id="period" name="user_period">
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="user_address">
+      </div>
+
+      <div class="tab">
+        <legend><span class="number">1</span>Dados do aluno estágiário</legend>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label for="cpf">CPF:</label>
+        <input oninput="mascara(this)" type="text" id="cpf" name="user_cpf">
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="user_rg">
+
+        <label for="instituition">Instituição:</label>
+        <input type="text" id="instituition" name="user_instituition">
+
+        <label for="tuition">Matrícula:</label>
+        <input type="text" id="tuition" name="user_tuition">
+
+        <label for="course">Curso:</label>
+        <input type="text" id="course" name="user_course">
+
+        <label for="period">Semestre/Ano:</label>
+        <input type="text" id="period" name="user_period">
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="user_address">
       </div>
 
       <div style="overflow:auto;">
@@ -90,8 +195,8 @@
       <div style="text-align:center;margin-top:40px;">
         <span class="step"></span>
         <span class="step"></span>
-        <!-- <span class="step"></span>
-        <span class="step"></span> -->
+        <span class="step"></span>
+        <span class="step"></span>
       </div>
       <!-- 
       <fieldset>
