@@ -100,19 +100,56 @@
         </div>
       </div>
 
+      <div class="tab">
+        <legend><span class="number">3</span>Dados do Estágio</legend>
+        <label for="start_date">Data de Início:</label>
+        <input type="date" id="start_date" name="work-start">
+
+        <label for="end_date">Data prevista para o término:</label>
+        <input type="date" id="end_date" name="work-end">
+
+        <legend><span class="number">4</span>Dados do orientador do estágio na empresa</legend>
+
+        <label for="worker_name">Nome:</label>
+        <input type="text" id="worker_name" name="worker_name">
+
+        <label for="worker_formation">Formação</label>
+        <input type="text" id="worker_formation" name="worker_formation">
+
+        <label for="worker_role">Cargo:</label>
+        <input type="text" id="worker_role" name="worker_role">
+
+        <label for="worker_mail">Email:</label>
+        <input type="email" id="worker_mail" name="worker_email">
+
+        <label for="worker_tel">Telefone:</label>
+        <input type="text" id="worker_tel" name="worker_tel">
+
+        <legend><span class="number">5</span>Dados do Professor orientador</legend>
+
+        <label for="teacher_name">Nome:</label>
+        <input type="text" id="teacher_name" name="teacher_name">
+
+        <label for="teacher_mail">Email:</label>
+        <input type="email" id="teacher_mail" name="teacher_email">
+
+        <label for="teacher_tel">Telefone:</label>
+        <input type="text" id="teacher_tel" name="teacher_tel">
+      </div>
 
 
-      <div style="overflow:auto;">
+
+      <div class="check">
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
         <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
       </div>
 
 
-      <div style="text-align:center;margin-top:40px;">
+      <div style="text-align:center;">
         <span class="step"></span>
         <span class="step"></span>
-        <!-- <span class="step"></span>
-        <span class="step"></span> -->
+        <span class="step"></span>
+        <!-- <span class="step"></span> -->
       </div>
     </form>
 

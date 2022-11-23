@@ -15,9 +15,9 @@ function showTab(n) {
     prevBtn.style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "Enviar";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Próximo";
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
@@ -27,7 +27,7 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
+  // if (n == 1 && !validateForm()) return false;
   // Hide the current tab:
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
