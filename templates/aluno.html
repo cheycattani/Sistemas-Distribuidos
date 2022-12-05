@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estágio obrigatório</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/style2.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="titleUnifei">
+      <div>
+        <img src="../static/img/logo-unifei-oficial.png">
+      </div>
+      <div class="titleLogo">
+        <span>UNIFEI</span>
+        <span>Universidade Federal de Itajubá</span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li><a>Aluno</a></li>
+      <li><a href="orientador.html">Orientador</a></li>
+      <li><a href="coordenador.html">Coordenador</a></li>
+    </ul>
+  </header>
+
+  <div class="topTitle">
+    <h1>Cadastrar solicitação de estágio obrigatório</h1>
+  </div>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <form id="cadastroForm" action="index.html" method="post">
+
+      <div class="tab">
+        <legend><span class="number">1</span>Dados do aluno estágiário</legend>
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label for="cpf">CPF:</label>
+        <input oninput="mascara(this)" type="text" id="cpf" name="user_cpf">
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="user_rg">
+
+        <label for="instituition">Instituição:</label>
+        <input type="text" id="instituition" name="user_instituition">
+
+        <label for="tuition">Matrícula:</label>
+        <input type="text" id="tuition" name="user_tuition">
+
+        <label for="course">Curso:</label>
+        <input type="text" id="course" name="user_course">
+
+        <label for="period">Semestre/Ano:</label>
+        <input type="text" id="period" name="user_period">
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="user_address">
+      </div>
+
+      <div class="tab">
+        <legend><span class="number">2</span>Dados da empresa</legend>
+        <label for="corporate_name">Razão Social:</label>
+        <input type="text" id="corporate_name" name="corporate_name">
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="corporate_address">
+
+        <label for="ativities">Ramo de Atividades:</label>
+        <input type="text" id="ativities" name="corporate_ativities">
+
+        <label for="corporate_type">Tipo de empresa:</label>
+
+        <div class="inputWrapper">
+          <label for="private">Privada</label><br>
+          <input type="radio" id="private" name="corporate_type" value="Private">
+        </div>
+        <div class="inputWrapper">
+          <label for="public">Pública</label><br>
+          <input type="radio" id="public" name="corporate_type" value="Public">
+        </div>
+      </div>
+
+      <div class="tab">
+        <legend><span class="number">3</span>Dados do Estágio</legend>
+        <label for="start_date">Data de Início:</label>
+        <input type="date" id="start_date" name="work-start">
+
+        <label for="end_date">Data prevista para o término:</label>
+        <input type="date" id="end_date" name="work-end">
+
+        <legend><span class="number">4</span>Dados do orientador do estágio na empresa</legend>
+
+        <label for="worker_name">Nome:</label>
+        <input type="text" id="worker_name" name="worker_name">
+
+        <label for="worker_formation">Formação</label>
+        <input type="text" id="worker_formation" name="worker_formation">
+
+        <label for="worker_role">Cargo:</label>
+        <input type="text" id="worker_role" name="worker_role">
+
+        <label for="worker_mail">Email:</label>
+        <input type="email" id="worker_mail" name="worker_email">
+
+        <label for="worker_tel">Telefone:</label>
+        <input type="text" id="worker_tel" name="worker_tel">
+
+        <legend><span class="number">5</span>Dados do Professor orientador</legend>
+
+        <label for="teacher_name">Nome:</label>
+        <input type="text" id="teacher_name" name="teacher_name">
+
+        <label for="teacher_mail">Email:</label>
+        <input type="email" id="teacher_mail" name="teacher_email">
+
+        <label for="teacher_tel">Telefone:</label>
+        <input type="text" id="teacher_tel" name="teacher_tel">
+      </div>
+
+
+
+      <div class="check">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+      </div>
+
+
+      <div style="text-align:center;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <!-- <span class="step"></span> -->
+      </div>
+    </form>
+
+  </body>
+
+</html>
+
+<footer>
+  <div class="footer-copyright">
+    <p>© 2022 UNIFEI. Todos os direitos reservados. </p>
+  </div>
+</footer>
+
+<script src="../static/script/scripts.js"></script>
+</body>
+
+
+</html>
