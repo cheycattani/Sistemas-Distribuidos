@@ -47,47 +47,61 @@
     <form id="cadastroForm" action="index.html" method="post">
 
       <div class="tab">
-        <legend><span class="number">1</span>Dados do aluno estágiário</legend>
-
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="user_name">
-
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email">
-
-        <label for="cpf">CPF:</label>
-        <input oninput="mascara(this)" type="text" id="cpf" name="user_cpf">
-
-        <label for="rg">RG:</label>
-        <input type="text" id="rg" name="user_rg">
-
-        <label for="instituition">Instituição:</label>
-        <input type="text" id="instituition" name="user_instituition">
-
-        <label for="tuition">Matrícula:</label>
-        <input type="text" id="tuition" name="user_tuition">
-
-        <label for="course">Curso:</label>
-        <input type="text" id="course" name="user_course">
-
-        <label for="period">Semestre/Ano:</label>
-        <input type="text" id="period" name="user_period">
-
-        <label for="address">Endereço:</label>
-        <input type="text" id="address" name="user_address">
+        <b><legend><span class="number">1</span>Dados do aluno estágiário</legend></b>
+        
+        <div>
+          <label for="name">Nome: </label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">  
+        </div>
+        <div>
+          <label for="cpf">CPF:</label>
+          <input oninput="mascara(this)" type="text" id="cpf" name="user_cpf">
+        </div>
+        <div>
+          <label for="rg">RG:</label>
+          <input type="text" id="rg" name="user_rg">  
+        </div>
+        <div>
+          <label for="instituition">Instituição:</label>
+          <input type="text" id="instituition" name="user_instituition">
+        </div>
+        <div>
+          <label for="tuition">Matrícula:</label>
+          <input type="text" id="tuition" name="user_tuition">  
+        </div>  
+        <div>
+          <label for="course">Curso:</label>
+          <input type="text" id="course" name="user_course">  
+        </div>
+        <div>
+          <label for="period">Semestre/Ano:</label>
+          <input type="text" id="period" name="user_period">  
+        </div>
+        <div>
+          <label for="address">Endereço:</label>
+          <input type="text" id="address" name="user_address">  
+        </div>
       </div>
 
       <div class="tab">
-        <legend><span class="number">2</span>Dados da empresa</legend>
+        <b><legend><span class="number">2</span>Dados da empresa</legend></b>
         <label for="corporate_name">Razão Social:</label>
         <input type="text" id="corporate_name" name="corporate_name">
 
-        <label for="address">Endereço:</label>
-        <input type="text" id="address" name="corporate_address">
-
-        <label for="ativities">Ramo de Atividades:</label>
-        <input type="text" id="ativities" name="corporate_ativities">
-
+        <div>
+          <label for="address">Endereço:</label>
+          <input type="text" id="address" name="corporate_address">  
+        </div>
+        
+        <div>
+          <label for="ativities">Ramo de Atividades:</label>
+          <input type="text" id="ativities" name="corporate_ativities">  
+        </div>
+        
         <label for="corporate_type">Tipo de empresa:</label>
 
         <div class="inputWrapper">
@@ -101,55 +115,99 @@
       </div>
 
       <div class="tab">
-        <legend><span class="number">3</span>Dados do Estágio</legend>
-        <label for="start_date">Data de Início:</label>
-        <input type="date" id="start_date" name="work-start">
+        <b><legend><span class="number">3</span>Dados do Estágio</legend></b>
+        
+        <div><p-calendar> 
+          <label for="initial_date"> Data Inicial: </label>
+          <input type="date" id="initial_date" name="initial_date">  
+        </p-calendar></div>
+        
+        <div><p-calendar> 
+          <label for="final_date"> Data prevista para o término: </label>
+          <input type="date" id="final_date" name="final_date">  
+        </p-calendar></div>
+        
+        <div>
+          <label for="local_estag">Local do Estágio: </label>
+          <input type="text" id="local_estag" name="local_estag">  
+        </div>
+        <div>
+          <fieldset>
+            <legend>Dias de trabalho semanal</legend>
+            <input type="radio" name="action" id="seg" value="seg"/><label for="seg">Segunda-feira</label><br/>
+            <input type="radio" name="action" id="ter" value="ter"/><label for="ter">Terça-feira</label><br/>
+            <input type="radio" name="action" id="qua" value="qua"/><label for="qua">Quarta-feira</label><br/>
+            <input type="radio" name="action" id="qui" value="qui"/><label for="qui">Quinta-feira</label><br/>
+            <input type="radio" name="action" id="sex" value="sex"/><label for="sex">Sexta-feira</label><br/>
+            <input type="radio" name="action" id="sab" value="sab"/><label for="sab">Sábado</label><br/>
+            <input type="radio" name="action" id="dom" value="dom"/><label for="dog">Domingo</label><br/>
+          </fieldset>        
+        </div><br>
+        
+        <div><p-calendar> 
+          <label for="initial_time"> Horário de inicio: </label>
+          <input type="time" id="initial_time" name="initial_time">  
+        </p-calendar></div>
+        
+        <div><p-calendar> 
+          <label for="final_time"> Horário de término: </label>
+          <input type="time" id="final_time" name="final_time">  
+        </p-calendar></div>
+        
+        <span>Remuneração do estágio: </span>
+        <br></br>
 
-        <label for="end_date">Data prevista para o término:</label>
-        <input type="date" id="end_date" name="work-end">
+        <div>
+          <label for="bolsa_type">Tipo de bolsa: </label>
+          <input type="text" id="bolsa_type" name="bolsa_type">  
+        </div>
+        <div>
+          <label for="bolsa_value">Valor da bolsa: </label>
+          <input type="bolsa_value" id="bolsa_value" name="bolsa_value">  
+        </div>
+        
+        <br></br>
+        <span>Orientador do estágio na empresa: </span>
+        <br></br>
 
-        <legend><span class="number">4</span>Dados do orientador do estágio na empresa</legend>
+        <div>
+          <label for="orien_name_corporate">Nome: </label>
+          <input type="text" id="orien_name_corporate" name="orien_name_corporate">  
+        </div>
+        
+        <div>
+          <label for="formation">Formação: </label>
+          <input type="text" id=" formation" name="formation">  
+        </div>
 
-        <label for="worker_name">Nome:</label>
-        <input type="text" id="worker_name" name="worker_name">
+        <div>
+          <label for="occupation">Cargo: </label>
+          <input type="text" id="occupation" name="occupation">  
+        </div>
 
-        <label for="worker_formation">Formação</label>
-        <input type="text" id="worker_formation" name="worker_formation">
+        <div>
+          <label for="email_corporate">Email: </label>
+          <input type="text" id="email_corporate" name="email_corporate">  
+        </div>
 
-        <label for="worker_role">Cargo:</label>
-        <input type="text" id="worker_role" name="worker_role">
-
-        <label for="worker_mail">Email:</label>
-        <input type="email" id="worker_mail" name="worker_email">
-
-        <label for="worker_tel">Telefone:</label>
-        <input type="text" id="worker_tel" name="worker_tel">
-
-        <legend><span class="number">5</span>Dados do Professor orientador</legend>
-
-        <label for="teacher_name">Nome:</label>
-        <input type="text" id="teacher_name" name="teacher_name">
-
-        <label for="teacher_mail">Email:</label>
-        <input type="email" id="teacher_mail" name="teacher_email">
-
-        <label for="teacher_tel">Telefone:</label>
-        <input type="text" id="teacher_tel" name="teacher_tel">
+        <div>
+          <label for="tel_corporate">Telefone: </label>
+          <input type="text" id="tel_corporate" name="tel_corporate">  
+        </div>
       </div>
 
 
-
-      <div class="check">
+      <div style="overflow:auto;">
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
         <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
       </div>
 
 
-      <div style="text-align:center;">
+      <div style="text-align:center;margin-top:40px;">
         <span class="step"></span>
         <span class="step"></span>
-        <span class="step"></span>
-        <!-- <span class="step"></span> -->
+        <!-- <span class="step"></span>
+        <span class="step"></span> -->
       </div>
     </form>
 
