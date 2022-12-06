@@ -20,56 +20,63 @@
         <span>Universidade Federal de Itajubá</span>
       </div>
     </div>
-    <ul class="menu">
-      <li><a href="aluno.html">Aluno</a></li>
-      <li><a href="orientador.html">Orientador</a></li>
-      <li><a>Coordenador</a></li>
-    </ul>
   </header>
 
   <div class="topTitle">
     <h1>Estágio obrigatório</h1>
   </div>
 
-  <div class="components">
+  <!-- <div class="components">
     <ul class="dados">
       <li>Dados pessoais</li>
       <li>Alunos orientados</li>
       <li>Professores</li>
-    </ul>
+    </ul> -->
+  <div class="container">
+    <div>
+      <label for="name">Nome do Aluno: </label>
+      <input type="text" id="name" name="user_name">
+      <label for="name">Nome do Professor: </label>
+      <input type="text" id="name" name="user_name">
 
-    <div class="container">
-      <table>
-        <thead>
-          <tr>
-            <th>Nome Completo</th>
-            <th>Matrícula</th>
-            <th>Curso</th>
-            <th>Instituição</th>
-            <th>Semestre/Ano</th>
-            <th>E-mail</th>
-            <th>CPF</th>
-            <th>RG</th>
-            <th>Endereço</th>
-            <th>Situação</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>João da Silva</td>
-            <td>2019000000</td>
-            <td>Engenharia de Software</td>
-            <td>6º</td>
-            <td>(35) 99999-9999</td>
-            <td>Other</td>
-            <td>Other</td>
-            <td>Other</td>
-            <td>Other</td>
-          </tr>
-
-        </tbody>
-      </table>
+      <button type="button" id="filtro" onclick=filtrar> Filtrar</button>
     </div>
+
+  </div>
+
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome Completo</th>
+          <th>Matrícula</th>
+          <th>Curso</th>
+          <th>Instituição</th>
+          <th>Semestre/Ano</th>
+          <th>E-mail</th>
+          <th>CPF</th>
+          <th>RG</th>
+          <th>Endereço</th>
+          <th>Situação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João da Silva</td>
+          <td>2019000000</td>
+          <td>Engenharia de Software</td>
+          <td>6º</td>
+          <td>(35) 99999-9999</td>
+          <td>Other</td>
+          <td>Other</td>
+          <td>Other</td>
+          <td>Other</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
   </div>
 
   </div>

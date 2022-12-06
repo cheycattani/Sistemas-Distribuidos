@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+#bodyLogin {
+  background-color: #395989;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -26,7 +30,6 @@ a:hover {
 }
 
 #container img {
-  width: 327px;
   height: 99px;
   margin-top: 10px;
 }
@@ -40,6 +43,8 @@ input.submit {
   width: 50%;
   border-radius: 10px;
   margin-top: 40px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .title {
@@ -52,7 +57,6 @@ input.submit {
 #checkbox {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -191,7 +195,7 @@ table tbody tr:nth-child(even) td {
 table tbody td {
   color: #1a202c;
   text-align: left;
-  padding: 1.5rem 1.5rem;
+  padding: 15px;
   vertical-align: middle;
   font-size: 1.125rem;
   font-weight: normal;
@@ -245,6 +249,20 @@ h1 {
   text-align: center;
 }
 
+.accordion-body {
+  padding: 10px 0 !important;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: #f4f7f8 !important;
+  font-weight: 600 !important;
+  border: 1px solid gray !important;
+}
+
+.accordion-button:focus {}
+
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -283,7 +301,7 @@ select {
 }
 
 button {
-  padding: 19px 39px 18px 39px;
+  padding: 15px 10px 15px 10px;
   color: #FFF;
   background-color: #395989;
   font-size: 18px;
@@ -305,6 +323,8 @@ fieldset {
 legend {
   font-size: 1.4em;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 label {
@@ -348,6 +368,8 @@ input {
 
 fieldset {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 input.invalid {
@@ -383,7 +405,6 @@ input.invalid {
 }
 
 .inputWrapper label {
-  margin-right: 10px;
   padding: 10px;
 }
 
@@ -396,4 +417,62 @@ input.invalid {
 /* space between buttons */
 .check button:not(:last-child) {
   margin-right: 30px;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+/* approve button */
+#approve {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  padding: 7.5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 50px;
+}
+
+/* refuse button */
+#refuse {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 7.5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.fieldset {
+  /* side by side checkbox */
+  display: flex;
+  align-items: center;
+  padding: 50px;
+
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #395989;
+  color: white;
+  text-align: center;
 }

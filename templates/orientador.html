@@ -1,46 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estágio obrigatório</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estágio obrigatório</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-    <header class="header">
-        <div class="titleUnifei">
+  <header class="header">
+    <div class="titleUnifei">
+      <div>
+        <img src="../static/img/logo-unifei-oficial.png">
+      </div>
+      <div class="titleLogo">
+        <span>UNIFEI</span>
+        <span>Universidade Federal de Itajubá</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="topTitle">
+    <h1>Estágio obrigatório</h1>
+  </div>
+  <!-- 
+  <div class="components">
+    <ul class="dados">
+      <li>Dados pessoais</li>
+      <li>Alunos solicitantes</li>
+      <li>Alunos orientados</li>
+    </ul>
+  </div> -->
+
+  <form action="/aluno" method="post" class="form-passagem">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="conteudo">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Orientados
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
             <div>
-                <img src="../static/img/logo-unifei-oficial.png"> 
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nome Completo</th>
+                    <th>Matrícula</th>
+                    <th>Curso</th>
+                    <th>Instituição</th>
+                    <th>Semestre/Ano</th>
+                    <th>E-mail</th>
+                    <th>CPF</th>
+                    <th>Situação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>João da Silva</td>
+                    <td>2019000000</td>
+                    <td>SIN</td>
+                    <td>UNIFEI</td>
+                    <td>6º</td>
+                    <td>Other</td>
+                    <td>Other</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="titleLogo">
-                <span >UNIFEI</span>
-                <span>Universidade Federal de Itajubá</span>
-            </div>
+          </div>
         </div>
-        <ul class="menu">
-            <li><a href="aluno.html">Aluno</a></li>
-            <li><a>Orientador</a></li>
-            <li><a href="coordenador.html">Coordenador</a></li>
-        </ul>
-    </header>
-
-    <div class="topTitle">
-        <h1>Estágio obrigatório</h1>
+      </div>
+    </div>
+    <div class="accordion-item conteudo">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Solicitações
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome Completo</th>
+                  <th>Matrícula</th>
+                  <th>Curso</th>
+                  <th>Instituição</th>
+                  <th>Semestre/Ano</th>
+                  <th>E-mail</th>
+                  <th>CPF</th>
+                  <th>Situação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>João da Silva</td>
+                  <td>2019000000</td>
+                  <td>SIN</td>
+                  <td>UNIFEI</td>
+                  <td>6º</td>
+                  <td>Other</td>
+                  <td>Other</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="components">
-        <ul class="dados">
-            <li>Dados pessoais</li>
-            <li>Alunos solicitantes</li>
-            <li>Alunos orientados</li>
-        </ul>
     </div>
+  </form>
 
-    <footer>
-        <div class="footer-copyright">
-            <p>© 2022 UNIFEI. Todos os direitos reservados. </p>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-copyright">
+      <p>© 2022 UNIFEI. Todos os direitos reservados. </p>
+    </div>
+  </footer>
 </body>
+
 </html>

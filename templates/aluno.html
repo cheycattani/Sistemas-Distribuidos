@@ -22,11 +22,6 @@
         <span>Universidade Federal de Itajubá</span>
       </div>
     </div>
-    <ul class="menu">
-      <li><a>Aluno</a></li>
-      <li><a href="orientador.html">Orientador</a></li>
-      <li><a href="coordenador.html">Coordenador</a></li>
-    </ul>
   </header>
 
   <div class="topTitle">
@@ -47,15 +42,17 @@
     <form id="cadastroForm" action="index.html" method="post">
 
       <div class="tab">
-        <b><legend><span class="number">1</span>Dados do aluno estágiário</legend></b>
-        
+        <b>
+          <legend><span class="number">1</span>Dados do aluno estagiário</legend>
+        </b>
+
         <div>
           <label for="name">Nome: </label>
           <input type="text" id="name" name="user_name">
         </div>
         <div>
           <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">  
+          <input type="email" id="mail" name="user_email">
         </div>
         <div>
           <label for="cpf">CPF:</label>
@@ -63,7 +60,7 @@
         </div>
         <div>
           <label for="rg">RG:</label>
-          <input type="text" id="rg" name="user_rg">  
+          <input type="text" id="rg" name="user_rg">
         </div>
         <div>
           <label for="instituition">Instituição:</label>
@@ -71,128 +68,138 @@
         </div>
         <div>
           <label for="tuition">Matrícula:</label>
-          <input type="text" id="tuition" name="user_tuition">  
-        </div>  
+          <input type="text" id="tuition" name="user_tuition">
+        </div>
         <div>
           <label for="course">Curso:</label>
-          <input type="text" id="course" name="user_course">  
+          <input type="text" id="course" name="user_course">
         </div>
         <div>
           <label for="period">Semestre/Ano:</label>
-          <input type="text" id="period" name="user_period">  
+          <input type="text" id="period" name="user_period">
         </div>
         <div>
           <label for="address">Endereço:</label>
-          <input type="text" id="address" name="user_address">  
+          <input type="text" id="address" name="user_address">
         </div>
       </div>
 
       <div class="tab">
-        <b><legend><span class="number">2</span>Dados da empresa</legend></b>
+        <b>
+          <legend><span class="number">2</span>Dados da empresa</legend>
+        </b>
         <label for="corporate_name">Razão Social:</label>
         <input type="text" id="corporate_name" name="corporate_name">
 
         <div>
           <label for="address">Endereço:</label>
-          <input type="text" id="address" name="corporate_address">  
+          <input type="text" id="address" name="corporate_address">
         </div>
-        
+
         <div>
           <label for="ativities">Ramo de Atividades:</label>
-          <input type="text" id="ativities" name="corporate_ativities">  
+          <input type="text" id="ativities" name="corporate_ativities">
         </div>
-        
+
         <label for="corporate_type">Tipo de empresa:</label>
 
         <div class="inputWrapper">
-          <label for="private">Privada</label><br>
+          <label for="private">Privada</label>
           <input type="radio" id="private" name="corporate_type" value="Private">
-        </div>
-        <div class="inputWrapper">
-          <label for="public">Pública</label><br>
+          <label for="public">Pública</label>
           <input type="radio" id="public" name="corporate_type" value="Public">
         </div>
       </div>
 
       <div class="tab">
-        <b><legend><span class="number">3</span>Dados do Estágio</legend></b>
-        
-        <div><p-calendar> 
-          <label for="initial_date"> Data Inicial: </label>
-          <input type="date" id="initial_date" name="initial_date">  
-        </p-calendar></div>
-        
-        <div><p-calendar> 
-          <label for="final_date"> Data prevista para o término: </label>
-          <input type="date" id="final_date" name="final_date">  
-        </p-calendar></div>
-        
+        <b>
+          <legend><span class="number">3</span>Dados do Estágio</legend>
+        </b>
+
+        <div>
+          <p-calendar>
+            <label for="initial_date"> Data Inicial: </label>
+            <input type="date" id="initial_date" name="initial_date">
+          </p-calendar>
+        </div>
+
+        <div>
+          <p-calendar>
+            <label for="final_date"> Data prevista para o término: </label>
+            <input type="date" id="final_date" name="final_date">
+          </p-calendar>
+        </div>
+
         <div>
           <label for="local_estag">Local do Estágio: </label>
-          <input type="text" id="local_estag" name="local_estag">  
+          <input type="text" id="local_estag" name="local_estag">
         </div>
-        <div>
+        <div class="days">
           <fieldset>
             <legend>Dias de trabalho semanal</legend>
-            <input type="radio" name="action" id="seg" value="seg"/><label for="seg">Segunda-feira</label><br/>
-            <input type="radio" name="action" id="ter" value="ter"/><label for="ter">Terça-feira</label><br/>
-            <input type="radio" name="action" id="qua" value="qua"/><label for="qua">Quarta-feira</label><br/>
-            <input type="radio" name="action" id="qui" value="qui"/><label for="qui">Quinta-feira</label><br/>
-            <input type="radio" name="action" id="sex" value="sex"/><label for="sex">Sexta-feira</label><br/>
-            <input type="radio" name="action" id="sab" value="sab"/><label for="sab">Sábado</label><br/>
-            <input type="radio" name="action" id="dom" value="dom"/><label for="dog">Domingo</label><br/>
-          </fieldset>        
+            <input type="checkbox" name="action" id="seg" value="seg" /><label for="seg">Segunda-feira</label><br />
+            <input type="checkbox" name="action" id="ter" value="ter" /><label for="ter">Terça-feira</label><br />
+            <input type="checkbox" name="action" id="qua" value="qua" /><label for="qua">Quarta-feira</label><br />
+            <input type="checkbox" name="action" id="qui" value="qui" /><label for="qui">Quinta-feira</label><br />
+            <input type="checkbox" name="action" id="sex" value="sex" /><label for="sex">Sexta-feira</label><br />
+            <input type="checkbox" name="action" id="sab" value="sab" /><label for="sab">Sábado</label><br />
+            <input type="checkbox" name="action" id="dom" value="dom" /><label for="dog">Domingo</label><br />
+          </fieldset>
         </div><br>
-        
-        <div><p-calendar> 
-          <label for="initial_time"> Horário de inicio: </label>
-          <input type="time" id="initial_time" name="initial_time">  
-        </p-calendar></div>
-        
-        <div><p-calendar> 
-          <label for="final_time"> Horário de término: </label>
-          <input type="time" id="final_time" name="final_time">  
-        </p-calendar></div>
-        
+
+        <div>
+          <p-calendar>
+            <label for="initial_time"> Horário de inicio: </label>
+            <input type="time" id="initial_time" name="initial_time">
+          </p-calendar>
+        </div>
+
+        <div>
+          <p-calendar>
+            <label for="final_time"> Horário de término: </label>
+            <input type="time" id="final_time" name="final_time">
+          </p-calendar>
+        </div>
+
         <span>Remuneração do estágio: </span>
         <br></br>
 
         <div>
           <label for="bolsa_type">Tipo de bolsa: </label>
-          <input type="text" id="bolsa_type" name="bolsa_type">  
+          <input type="text" id="bolsa_type" name="bolsa_type">
         </div>
         <div>
           <label for="bolsa_value">Valor da bolsa: </label>
-          <input type="bolsa_value" id="bolsa_value" name="bolsa_value">  
+          <input type="bolsa_value" id="bolsa_value" name="bolsa_value">
         </div>
-        
+
         <br></br>
         <span>Orientador do estágio na empresa: </span>
         <br></br>
 
         <div>
           <label for="orien_name_corporate">Nome: </label>
-          <input type="text" id="orien_name_corporate" name="orien_name_corporate">  
+          <input type="text" id="orien_name_corporate" name="orien_name_corporate">
         </div>
-        
+
         <div>
           <label for="formation">Formação: </label>
-          <input type="text" id=" formation" name="formation">  
+          <input type="text" id=" formation" name="formation">
         </div>
 
         <div>
           <label for="occupation">Cargo: </label>
-          <input type="text" id="occupation" name="occupation">  
+          <input type="text" id="occupation" name="occupation">
         </div>
 
         <div>
           <label for="email_corporate">Email: </label>
-          <input type="text" id="email_corporate" name="email_corporate">  
+          <input type="text" id="email_corporate" name="email_corporate">
         </div>
 
         <div>
           <label for="tel_corporate">Telefone: </label>
-          <input type="text" id="tel_corporate" name="tel_corporate">  
+          <input type="text" id="tel_corporate" name="tel_corporate">
         </div>
       </div>
 
