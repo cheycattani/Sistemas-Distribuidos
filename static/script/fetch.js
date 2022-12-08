@@ -5,6 +5,7 @@ function getAlunos(){
   .then(response => response.json())
   .then(alunos => console.log(alunos))
   .catch(err => console.log(err))
+
 }
 
 function getAlunosbyId(){
@@ -12,23 +13,35 @@ function getAlunosbyId(){
   .then(response => response.json())
   .then(json => console.log(json))
   .catch(err => console.log(err))
+  
 }
 
-function cadastraUsuario (body) {
-  const options = {
-    method: 'POST',
-    body: Object.keys(body)
-      .map(k => `${encodeURIComponent(k)}=${encodeURIComponent(body[k])}`)
-      .join('&')
+function postAluno () {
+  const form = document.getElementById('cadastroForm');
+  let data = {
+    nome: form.elements['name'].value,
+    cpf: form.elements['cpf'].value,
+    rg: form.elements['rg'].value,
+    matricula: form.elements['tuition'].value,
+    curso: form.elements['course'].value,
+    ECampus: "ITAJUBÁ",
+    telefone: 55778899,
+    email: form.elements['mail'].value,
+    professorId: 1,
+    curosId: 1
   }
 
-  return fetch('http://gerenciador-estagio.sa-east-1.elasticbeanstalk.com/alunos/add', options)
-      .then(T => T.json())
-  }
+  fetch('http://gerenciador-estagio.sa-east-1.elasticbeanstalk.com/alunos/add', {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {"Content-type": "application/json; charset=UTF-8"}
+  })
 
-  cadastraUsuario({ name: 'Bruno', email: 'teste@unifei.edu.br' })
-    .then(() => console.log('cadastrado'))
-    .catch(() => console.log('falha ao cadastrar'))
+  .then(response => response.json()) 
+  .then(json => console.log(json))
+  .catch(err => console.log(err))
+  
+}
 
 
 
