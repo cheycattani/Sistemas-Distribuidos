@@ -29,6 +29,7 @@
       <div class="titleLogo">
         <span>UNIFEI</span>
         <span>Universidade Federal de Itajubá</span>
+        <li id="professorNome"></li>
       </div>
     </div>
   </header>
@@ -36,8 +37,8 @@
   <div class="topTitle">
     <h1>Estágio obrigatório</h1>
   </div>
-  <!-- 
-  <div class="components">
+
+  <!-- <div class="components">
     <ul class="dados">
       <li>Dados pessoais</li>
       <li>Alunos solicitantes</li>
@@ -52,7 +53,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
             aria-controls="panelsStayOpen-collapseOne">
-            Orientados
+            Solicitações
           </button>
         </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
@@ -64,26 +65,30 @@
                   <tr>
                     <th>Nome Completo</th>
                     <th>Matrícula</th>
-                    <th>Curso</th>
-                    <th>Instituição</th>
-                    <th>Semestre/Ano</th>
                     <th>E-mail</th>
                     <th>CPF</th>
-                    <th>Situação</th>
+                    <th>Telefone</th>
+                    <th>Campus</th>
+                    <th>Aprovar</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>João da Silva</td>
-                    <td>2019000000</td>
-                    <td>SIN</td>
-                    <td>UNIFEI</td>
-                    <td>6º</td>
-                    <td>Other</td>
-                    <td>Other</td>
+                <tbody id="body">
+                  <tr id="box">
+                    <td id="name"></td>
+                    <td id="matricula"></td>
+                    <td id="email"></td>
+                    <td id="cpf"></td>
+                    <td id="telefone"></td>
+                    <td id="campus"></td>
+                    <td>
+                      <span class="material-symbols-outlined" id="permitir">check_circle</span>
+                      <span class="material-symbols-outlined" id="negar">close</span>
+                    </td>
                   </tr>
                 </tbody>
               </table>
+
+
             </div>
           </div>
         </div>
@@ -93,7 +98,7 @@
       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          Solicitações
+          Orientados
         </button>
       </h2>
       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -114,48 +119,6 @@
                 </tr>
               </thead>
               <tbody>
-                <script>
-                  $(document).ready(function () {
-
-                    // FETCHING DATA FROM JSON FILE
-                    $.getJSON(// return da funcao de getAlunos() ,
-
-                      function (data) {
-                        var student = '';
-
-                        // ITERATING THROUGH OBJECTS
-                        $.each(data, function (key, value) {
-
-                          //CONSTRUCTION OF ROWS HAVING
-                          // DATA FROM JSON OBJECT
-                          student += '<tr>';
-                          student += '<td>' +
-                            value.id + '</td>';
-
-                          student += '<td>' +
-                            value.nome + '</td>';
-
-                          student += '<td>' +
-                            value.cpf + '</td>';
-
-                          student += '<td>' +
-                            value.matricula + '</td>';
-
-                          student += '<td>' +
-                            value.curso + '</td>';
-
-                          student += '<td>' +
-                            value.professorId + '</td>';
-
-
-                          student += '</tr>';
-                        });
-
-                        //INSERTING ROWS INTO TABLE 
-                        $('#table').append(student);
-                      });
-                  });
-                </script>
                 <!-- 
                   <tr>
                     <output></output>
@@ -177,6 +140,7 @@
 
     </div>
   </form>
+  <div id="meu-container"></div>
   <footer>
     <div class="footer-copyright">
       <p>© 2022 UNIFEI. Todos os direitos reservados. </p>
@@ -185,7 +149,7 @@
 
   <!-- <script src="../static/script/scripts.js"></script> -->
   <script src="../static/script/scripts.js"></script>
-  <script src="../static/script/fetch.js"></script>
+  <script src="../static/script/fetchOrientador.js"></script>
 </body>
 
 </html>

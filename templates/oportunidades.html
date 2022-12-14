@@ -24,11 +24,11 @@
         <span>Universidade Federal de Itajubá</span>
       </div>
     </div>
-    <a href="/templates/oportunidades.html" class="header-button">Oportunidades</a>
+    <a href="/templates/aluno.html" class="header-button">Dados Pessoais</a>
   </header>
 
   <div class="topTitle">
-    <h1>Dados do Aluno</h1>
+    <h1>Oportunidades</h1>
   </div>
 
   <head>
@@ -38,11 +38,42 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="StyleCards.css" />
   </head>
 
   <body>
-
+    <div class="card">
+      <h2 class="card-title"></h2>
+      <p class="card-description"></p>
+      <button id="">Enviar solicitação</button>
+    </div>
   </body>
+
+  <style>
+    .card {
+      background-color: #fafafa;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  </style>
 
 </html>
 
@@ -53,7 +84,7 @@
 </footer>
 
 <script src="../static/script/scripts.js"></script>
-<script src="../static/script/scriptAluno.js"></script>
+<script src="../static/script/fetchOportunidade.js"></script>
 
 </body>
 

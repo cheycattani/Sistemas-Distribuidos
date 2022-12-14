@@ -24,11 +24,10 @@
         <span>Universidade Federal de Itajubá</span>
       </div>
     </div>
-    <a href="/templates/oportunidades.html" class="header-button">Oportunidades</a>
   </header>
 
   <div class="topTitle">
-    <h1>Dados do Aluno</h1>
+    <h1>Cadastrar solicitação de estágio obrigatório</h1>
   </div>
 
   <head>
@@ -42,6 +41,29 @@
 
   <body>
 
+    <form id="cadastroForm" action="aluno.html" method="post">
+
+      <b>
+        <legend><span class="number">1</span>Dados do aluno estagiário</legend>
+      </b>
+      <label>Nome:</label><br>
+      <input type="text" name="nome"><br>
+      <label>CPF:</label><br>
+      <input type="text" name="cpf"><br>
+      <label>RG:</label><br>
+      <input type="text" name="rg"><br>
+      <label>Matrícula:</label><br>
+      <input type="text" name="matricula"><br>
+      <label>Campus:</label><br>
+      <input type="text" name="campus"><br>
+      <label>Telefone:</label><br>
+      <input type="text" name="telefone"><br>
+      <label>Email:</label><br>
+      <input type="text" name="email"><br>
+      <label>ID do Professor:</label><br>
+      <input type="number" name="professorId"><br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
   </body>
 
 </html>
@@ -53,7 +75,6 @@
 </footer>
 
 <script src="../static/script/scripts.js"></script>
-<script src="../static/script/scriptAluno.js"></script>
 
 </body>
 
