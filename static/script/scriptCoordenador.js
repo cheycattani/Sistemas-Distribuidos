@@ -3,7 +3,7 @@
 
   // Crie um objeto JSON com os dados que deseja enviar
   const dadosJSON = {
-    "nome": "Trabalho 1",
+    "nome": "Trabalho teste1233",
     "fornecedor": {
       "razaoSocial": "Organização padrão",
       "atividadePrincipal": "idk",
