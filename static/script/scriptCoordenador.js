@@ -54,7 +54,7 @@ botao.addEventListener("click", () => {
   dadosJSON.nome = `Trabalho-${contador}`;
 
   // Faça a requisição HTTP com o novo valor do campo "nome"
-  fetch(urlRota, {
+  fetch(urlAdd, {
     method: "POST",
     body: JSON.stringify(dadosJSON),
     headers: {
