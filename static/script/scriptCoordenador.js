@@ -3,9 +3,9 @@
 
   // Crie um objeto JSON com os dados que deseja enviar
   const dadosJSON = {
-    "nome": "Trabalho teste1233",
+    "nome": "Oportunidade Bruno",
     "fornecedor": {
-      "razaoSocial": "Organização padrão",
+      "razaoSocial": "UNIFEI",
       "atividadePrincipal": "idk",
       "tipoEmpresa": "OFFG",
       "endereco": {
@@ -32,6 +32,7 @@
   .then(responseJSON => {
     // Faça alguma coisa com a resposta JSON aqui
     console.log(responseJSON);
+
   })
   .catch(error => {
     // Trate o erro aqui
@@ -48,10 +49,11 @@ const botao = document.getElementById("submitAdd");
 // Adicione um listener de eventos de clique ao botão
 botao.addEventListener("click", () => {
   // Incremente o contador
-  contador++;
+  // contador++;
 
   // Atualize o valor do campo "nome" com o novo valor do contador
-  dadosJSON.nome = `Trabalho-${contador}`;
+  // dadosJSON.nome = `Trabalho-${contador}`;
+  alert(`Oportunidade ${responseJSON.nome} cadastrada com sucesso!`);
 
   // Faça a requisição HTTP com o novo valor do campo "nome"
   fetch(urlAdd, {
